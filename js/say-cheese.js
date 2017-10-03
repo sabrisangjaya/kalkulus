@@ -20,8 +20,9 @@ var SayCheese = (function () {
 
 	navigator.getUserMedia = (navigator.getUserMedia ||
 			navigator.webkitGetUserMedia ||
-			navigator.mediaDevices.getUserMedia ||
+			navigator.mozGetUserMedia ||
 			navigator.msGetUserMedia ||
+			navigator.mediaDevices.getUserMedia ||
 			false);
 
 	window.AudioContext = (window.AudioContext ||
@@ -162,7 +163,7 @@ var SayCheese = (function () {
 			this.stream = stream;
 			this.createVideo();
 
-			if (navigator.getUserMedia) {
+			if (navigator.mozGetUserMedia) {
 				this.video.mozSrcObject = stream;
 			} else {
 				this.video.src = this.getStreamUrl();

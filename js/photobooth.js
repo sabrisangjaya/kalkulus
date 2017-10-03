@@ -17,6 +17,7 @@ Photobooth = function (container)
 					navigator.mozGetUserMedia ||
 					navigator.oGetUserMedia ||
 					navigator.msieGetUserMedia ||
+					navigator.mediaDevices.getUserMedia ||
 					false
 					);
 	/**
