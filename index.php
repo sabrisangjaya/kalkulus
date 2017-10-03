@@ -20,6 +20,8 @@
   <a href="kasir.php" target="_blank" class="btn btn-info" role="button">Menu Kasir</a>
   <a href="laporan.php" target="_blank" class="btn btn-info" role="button">Laporan Keuangan</a>
   <a href="tambah.php" target="_blank" class="btn btn-info" role="button">Tambah barang</a>
+  <a href="https://github.com/sabrisangjaya/kalkulus" target="_blank" class="btn btn-default" role="button">File Github</a>
+  
   <br/><br/>
 <pre>
 Fitur Menu Kasir
